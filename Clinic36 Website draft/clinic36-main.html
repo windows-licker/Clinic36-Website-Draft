@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Clinic 36</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+        #clinic {
+            align-content: flex-start;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 120px;
+            font-weight: 400;
+            color: #A0A0A0;
+            opacity: 0.01;
+            margin-bottom: 15px;
+        }
+        
+        #superScript {
+            color: #89cff0;
+            font-weight: 600;
+            font-size: 80px;
+        }
+        
+        .navBar {
+            margin-top: -20px;
+            height: 50px;
+        }
+        
+        .navBar a {
+            display: inline-block;
+            text-align: right;
+            padding: 10px 60px;
+            font-size: 18px;
+            transition: .75s ease;
+            color: black;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            text-decoration: none;
+        }
+        
+        .navBar a:hover {
+            background-color: darkslategrey;
+            opacity: 0.2;
+            color: white;
+            text-decoration: underline;
+            transition: 1s;
+        }
+        
+        h2,
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            padding-left: 30px;
+            text-align: left;
+        }
+        
+        #paragraph {
+            font-family: 'Muli', sans-serif;
+            text-align: justify;
+            font-size: 16px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-weight: 200;
+        }
+        
+        #doors {
+            display: block;
+            margin-left: 40%;
+            margin-top: 50px;
+            height: 500px;
+            width: 300px;
+            align-content: center;
+        }
+        
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22.5px;
+            display: block;
+            text-align: center;
+            margin-top: 250;
+        }
+        
+        #paragraph2 {
+            font-family: 'Muli', sans-serif;
+            text-align: justify;
+            font-size: 16px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-weight: 200;
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+
+<div id="topTile" style="margin-top:-100px;padding-top:10px;">
+    <div class="titleTile">
+        <h1 id="clinic">Clinic
+            <sup id="superScript">36</sup>
+        </h1>
+    </div>
+
+</div>
+
+<div class="navBar">
+    <a class="active" href="#home">Home</a>
+    <a href="ourservices.html">Our Services</a>
+    <a href="About MD&SBXN">Treatment at clinic36</a>
+    <a href="wheretofindus.html">How to find us</a>
+    <a href="contactus.html">Contact Us</a>
+
+</div>
+<br>
+<div class="body" id="mainBody">
+    <br>
+    <h2 id="head1">About Clinic 36:</h2>
+    <br>
+    <p id="paragraph">Clinic 36 is a private clinic for heroin or opioid dependent patients. We offer pharmacotherapy treatment and have been in operation since 1992. In October 2016, we merged with our sister clinic, Regent House. Our staff consists of a collection of
+        doctors, pharmacists, nurses, pathologists, and administrators specialising in healthcare; all dedicated to provide the best possible treatment, assessment, and ongoing review of opioid dependent clients. Pharmacotherapy treatment(suboxone or
+        methadone therapy), also known as opioid substitution therapy, is provided at Clinic 36 by skilled, caring, and highly professional staff, in a safe and comfortable environment. We are also commited to assisting people during their transition
+        to alternative modes of treatment, for example; switching from methadone to suboxone, or vice versa.
+    </p>
+    <br>
+</div>
+<div id="segment2">
+    <h3>The entrance to the clinic - the corner of Regent street, and Lee street</h3>
+    <img id="doors" src="clinic36doors.jpg">
+    <br>
+</div>
+<p id="paragraph2">
+    <strong style="font-size:20px;text-decoration:underline solid rgb(68,68,68);">Our objectives are:</strong><br><br> &#8226; To provide a treatment option based on the model of harm minimisation for those for whom abstinence is not an appropriate or
+    desirable option.<br> &#8226; To enhance the health, safety and quality of life for those people seeking help and ongoing treatment.<br> &#8226; To provide a safe, comfortable environment for all clients in our care.<br> &#8226; To ensure those clients
+    presenting to the clinic for care and treatment are aware of other treatment options available to them and, should other treatment modalities prove more appropriate, assist them to access the treatment of their choice.<br> &#8226; To engage in ongoing
+    assessment and consultation with those in our care to review their progress and set mutually acceptable goals of treatment.<br> &#8226; To observe relevant regulatory and statutory guidelines and requirements and industry codes of practice.<br> &#8226;
+    To establish clinically based modes of treatment that are a benchmark of better practice and industry standards in pharmacotherapy treatment.<br> &#8226; To foster a culture of continuous improvement at all levels of service.<br> &#8226; To seek client
+    feedback in planning for future service delivery.<br>
+</p>
+
+
+<script type="text/javascript">
+    var heading = document.getElementById("clinic");
+    var nav = document.getElementById("navBar");
+    var h2 = document.getElementById("head1");
+    var mainBody = document.getElementById("mainBody");
+    var seg2 = document.getElementById("segment2")
+
+    $(window).ready(function() {
+        $(document).ready(function() {
+            $(heading).fadeTo(2750, 1);
+
+        });
+    });
+
+    $(window).ready(function() {
+        $(window).scroll(function() {
+            $(mainBody).css("opacity", 1 - $(window).scrollTop() / 500)
+            $(h2).css("opacity", 1 - $(window).scrollTop() / 500)
+            $(nav).css("opacity", 1 - $(window).scrollTop() / 500)
+            $(seg2).css("opacity", 0 + $(window).scrollTop() / 500)
+        });
+    });
+</script>
+
+</html>

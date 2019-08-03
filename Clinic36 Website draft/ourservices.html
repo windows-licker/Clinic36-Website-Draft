@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Clinic 36</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+        #clinic {
+            align-content: flex-start;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 120px;
+            font-weight: 400;
+            color: #A0A0A0;
+            margin-bottom: 15px;
+        }
+        
+        #superScript {
+            color: #89cff0;
+            font-weight: 600;
+            font-size: 80px;
+        }
+        
+        .navBar {
+            margin-top: -20px;
+            height: 50px;
+        }
+        
+        .navBar a {
+            display: inline-block;
+            text-align: right;
+            padding: 10px 60px;
+            font-size: 18px;
+            transition: .75s ease;
+            color: black;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            text-decoration: none;
+        }
+        
+        .navBar a:hover {
+            background-color: darkslategrey;
+            opacity: 0.2;
+            color: white;
+            text-decoration: underline;
+            transition: 1s;
+        }
+        
+        #body {
+            font-family: 'Muli', sans-serif;
+            text-align: justify;
+            font-size: 16px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-weight: 200;
+        }
+        
+        br {
+            line-height: 150%;
+        }
+        
+        #pillbottles {
+            display: block;
+            height: 400;
+            width: auto;
+        }
+    </style>
+</head>
+
+<div id="topTile" style="margin-top:-100px;padding-top:10px;">
+    <div class="titleTile">
+        <h1 id="clinic">Clinic
+            <sup id="superScript">36</sup>
+        </h1>
+    </div>
+
+</div>
+
+<div class="navBar">
+    <a href="clinic36-main.html">Home</a>
+    <a href="Our Services.html">Our Services</a>
+    <a href="treatment.html">Treatment at Clinic36</a>
+    <a href="wheretofindus.html">How to find us</a>
+    <a href="contactus.html">Contact Us</a>
+
+</div>
+
+<br>
+
+<div id="body">
+    <p><strong style="text-decoration: underline;">Our services:</strong><br>Clinic36 offers a number of services - the dispensing of both methadone, suboxone, and subutex, all depending on which treatment options clients might choose, in conjunction with
+        the opinion of a doctor assigned to them. The clinic ensures patients have frequent checkups with an in-house medical doctor, under the supervision of whom, clients of the clinic can choose to undergo titration (the raising or lowering of the
+        dose according to the needs of the patient), maintenence, or a medically supervised detox, where a patient chooses to slowly taper themselves off of the medication they're currently on. Clinic 36 is also a liver clinic; a clinic at which patients
+        with Hepatitis, or other liver diseases or complications can seek medical advice, and increasingly effective treatment. New treatment options for hepatitis A and B have recently become available; depending on a variety of factors, hepatitis A
+        and B are actually curable. </p>
+</div>
+
+<img id="pillbottles" src="pillbottles.jpg">
+
+<script type="text/javascript">
+    var heading = document.getElementById("clinic");
+    var pgraph = document.getElementById("body");
+
+    $(window).ready(function() {
+        $(document).ready(function() {
+            $(heading).fadeTo(2750, 1);
+
+            if (heading.style.opacity == 1) {
+                $(pgraph).fadeTo(2750, 1);
+            }
+
+
+        });
+    });
+</script>
+
+</html>
